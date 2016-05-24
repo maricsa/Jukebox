@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jukebox!</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<link href='https://fonts.googleapis.com/css?family=Trade+Winds' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+  <h1>Play some Jazz</h1>
+
+  <audio id="player" src="" type="audio/mp3"></audio>
+  <div id="dugme">
+	 
+	  <button id="playprew" class="buttons">Prew</button>
+	  <button id="playsong" class="buttons">&#9658;</button>
+	  <button id="playnext" class="buttons">Next</button>
+	  <button id="pausesong" class="buttons">&#9612;&#9612;</button>
+	  <button id="stopsong" class="buttons">Stop</button>
+  </div>
+
+
+<div id="form">
+	<label for="Title">Title</label>
+	<input type="text" id="tSong" name="titleSong"></input>
+	<label for="Artist">Artist</label>
+	<input type="text" id="aSong" name="artistSong"></input>
+	<label for="songUrl">URL</label>
+	<input type="text" id="uSong" name="urlSong"></input>
+	<button id="addSong" onclick="jukebox.addSong()">Add Song</button>
+</div>
+
+
+ <script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
